@@ -7,6 +7,7 @@ class City(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+
 class Airline(models.Model):
     name = models.CharField(max_length=20)
 
