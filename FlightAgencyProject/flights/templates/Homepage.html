@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights:</title>
+</head>
+<body>
+    {% if not request.user.is_authenticated %}
+        <a href="{% url 'users:login' %}">Log in/Sign up</a>
+    {% else %}
+        <h4>{{ user.username }}</h4>
+        <h4>Email: {{ user.email }}</h4>
+        <a href="{% url 'users:logout' %}">Log out</a>
+        <a href="{% url 'users:profile' %}">Profile Page</a>
+    {% endif %}
+    <h1>Hello, These are future flights:</h1>
+{% for flight in flights %}
+    <a href="{% url 'flights:flight_detail' flight.pk%}">{{flight.origin.city}} ({{flight.origin.symbol}}) to {{ flight.destination.city }} ({{ flight.destination.symbol }}) At  "{{ flight.datetime|date:"Y/m/d H:i"}}"<br> </a>
+{% endfor %}
+
+<h2>Search</h2>
+    <form action="{% url 'flights:homepage' %}" method="post">
+        {% csrf_token %}
+        <p>{{ form.as_p }}</p>
+    <button type="submit">Search</button>
+    </form>
+
+
+</body>
+</html>

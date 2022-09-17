@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ origin }} to {{ destination }} Flights</title>
+</head>
+<body>
+<h1>Future Flights from {{ origin }} to {{ destination }}</h1>
+{% for flight in filtered_flights %}
+    <a href="{% url 'flights:flight_detail' flight.pk%}">{{flight.origin.city}} ({{flight.origin.symbol}}) to {{ flight.destination.city }} ({{ flight.destination.symbol }}) At  "{{ flight.datetime|date:"Y/m/d H:i"}}"<br></br> </a>
+{% empty %}
+    <h3>There is no flight found from {{ origin }} to {{ destination }}</h3>
+{% endfor %}
+<a href="{% url 'flights:homepage' %}">Back to Homepage</a>
+</body>
+</html>

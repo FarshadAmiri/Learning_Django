@@ -1,0 +1,45 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ flight.origin }} to {{ flight.destination }} {{ flight.datetime }}</title>
+</head>
+<body>
+<h2>Flight ID: {{ pk }}</h2>
+<br>
+<li>Origin: {{ flight.origin }}</li>
+<li>Destination: {{ flight.destination }}</li>
+<li>Datetime: {{ flight.datetime|date:'Y/M/j H:i' }}</li>
+<li>Airline: {{ flight.airline }}</li>
+
+<br>
+<br>
+{#pk = {{ flight.pk }}#}
+<br>
+{#Passenger List:#}
+{#{% for passenger in passengers %}#}
+<h1>Passengers:</h1>
+{% for p in passengers %}
+    <li>{{ p }}</li>
+{% empty %}
+    No one on this flight yet!
+{% endfor %}
+
+{#{% empty %}#}
+{#    <br>#}
+{#    No One#}
+{#{% endfor %}#}
+<br>
+<br>
+<form action="{% url 'flights:flight_detail' flight.pk%}" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit">
+</form>
+
+{% if message %}
+    {{ message }}
+{% endif %}
+</body>
+</html>
