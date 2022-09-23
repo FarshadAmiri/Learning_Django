@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="Charity2 updated" />
+    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="Charity2 updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +71,7 @@
       <workItem from="1663508801978" duration="2592000" />
       <workItem from="1663583367825" duration="1011000" />
       <workItem from="1663610355263" duration="798000" />
-      <workItem from="1663913533066" duration="1126000" />
+      <workItem from="1663913533066" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="Database and venv modified">
       <created>1663400178806</created>
