@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="added some data" />
+    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="Phase 1 of Project - Exc 2&#10;v1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightAgencyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlightAgencyProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/charity.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charities/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charity/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charity/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charity/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charity/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/charity/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../charity/tests/testsample.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Farshad/Desktop/Charity"
+    "last_opened_file_path": "C:/Users/Farshad/Desktop/Philantropists"
   }
 }]]></component>
   <component name="RunManager">
@@ -62,6 +99,11 @@
       <option name="presentableId" value="Default" />
       <updated>1663398949464</updated>
       <workItem from="1663398998099" duration="6192000" />
+      <workItem from="1663424099197" duration="977000" />
+      <workItem from="1663508801978" duration="2592000" />
+      <workItem from="1663583367825" duration="1011000" />
+      <workItem from="1663610355263" duration="798000" />
+      <workItem from="1663913533066" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="Database and venv modified">
       <created>1663400178806</created>
