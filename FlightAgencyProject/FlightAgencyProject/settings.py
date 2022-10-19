@@ -28,6 +28,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +47,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'flights',
     'users',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -73,7 +80,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'FlightAgencyProject.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases

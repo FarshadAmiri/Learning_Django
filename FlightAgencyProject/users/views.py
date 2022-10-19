@@ -8,8 +8,13 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.generic import UpdateView, DetailView, DeleteView
 from django.contrib.auth.models import Group
 from django.contrib.auth.mixins import LoginRequiredMixin
+from rest_framework.views import APIView
+from rest_framework.generics import GenericAPIView
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.response import Response
 from .models import *
 from .forms import *
+
 
 def login_view(request):
     if request.method =='GET':
@@ -109,7 +114,3 @@ def delete_account_view(request):
         super(delete_account_view)
         return render(request, 'Delete_User_Page.html', context={'user':request.user,
                                                                  'msg':'Wrong Password!'})
-
-
-
-
