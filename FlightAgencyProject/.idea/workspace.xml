@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="minor mods">
-      <change afterPath="$PROJECT_DIR$/users/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightAgencyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlightAgencyProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightAgencyProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlightAgencyProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="minor mods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +80,7 @@
       <workItem from="1664246521612" duration="1479000" />
       <workItem from="1664511579856" duration="2627000" />
       <workItem from="1664939857554" duration="1197000" />
-      <workItem from="1666012103885" duration="5984000" />
+      <workItem from="1666012103885" duration="6429000" />
     </task>
     <task id="LOCAL-00001" summary="Database and venv modified">
       <created>1663400178806</created>
@@ -146,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663969563757</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="minor mods">
+      <created>1666221726166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666221726166</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
