@@ -13,6 +13,11 @@
         <a href="{% url 'users:logout' %}">Log out</a>
         <a href="{% url 'users:profile' %}">Profile Page</a>
     {% endif %}
+
+    <h2>
+    <a href="{% url 'articles:all_articles' %}">Articles</a>
+    </h2>
+
     <h1>Hello, These are future flights:</h1>
 {% for flight in flights %}
     <a href="{% url 'flights:flight_detail' flight.pk%}">{{flight.origin.city}} ({{flight.origin.symbol}}) to {{ flight.destination.city }} ({{ flight.destination.symbol }}) At  "{{ flight.datetime|date:"Y/m/d H:i"}}"<br> </a>
@@ -24,7 +29,6 @@
         <p>{{ form.as_p }}</p>
     <button type="submit">Search</button>
     </form>
-
 
 </body>
 </html>

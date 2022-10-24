@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="minor mods" />
+    <list default="true" id="2cf011e3-4ade-41bb-9ace-f62f6b14d8ff" name="Changes" comment="minor mods">
+      <change afterPath="$PROJECT_DIR$/articles/templates/articles/Article_Detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/templates/articles/Article_List.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/articles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightAgencyProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlightAgencyProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightAgencyProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlightAgencyProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/templates/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/flights/templates/Homepage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -29,14 +39,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Farshad/Desktop/Philantropists&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Farshad/Desktop/Philantropists"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="FlightAgencyProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="FlightAgencyProject" />
@@ -80,7 +91,9 @@
       <workItem from="1664246521612" duration="1479000" />
       <workItem from="1664511579856" duration="2627000" />
       <workItem from="1664939857554" duration="1197000" />
-      <workItem from="1666012103885" duration="6429000" />
+      <workItem from="1666012103885" duration="7351000" />
+      <workItem from="1666323679410" duration="6185000" />
+      <workItem from="1666591948922" duration="6527000" />
     </task>
     <task id="LOCAL-00001" summary="Database and venv modified">
       <created>1663400178806</created>

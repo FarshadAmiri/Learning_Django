@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'flights',
     'users',
+    'articles',
     'rest_framework.authtoken',
 ]
 

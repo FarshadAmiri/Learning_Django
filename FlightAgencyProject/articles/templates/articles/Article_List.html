@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+    <h1>This is the list of all of our published articles:</h1>
+    {% for article in object_list %}
+        <a href="{% url 'articles:article_page' article.slug%}">{{ article }}<br></a>
+
+    {% endfor %}
+
+
+</body>
+</html>
