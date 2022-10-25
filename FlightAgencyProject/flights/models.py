@@ -40,7 +40,6 @@ class Passenger(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     national_id = models.CharField(max_length=12, verbose_name='National id', primary_key=True)
-    # tickets = models.ManyToManyField(Flight)
     tickets = models.ManyToManyField(Flight)
 
 

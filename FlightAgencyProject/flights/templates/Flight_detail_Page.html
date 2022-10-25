@@ -6,6 +6,13 @@
     <title>{{ flight.origin }} to {{ flight.destination }} {{ flight.datetime }}</title>
 </head>
 <body>
+{% if user.username %}
+    <a href="{% url 'users:profile' %}">User: {{ user.username }}</a>
+    <br>
+    <a href="{% url 'users:logout' %}">Logout</a>
+{% else %}
+    <a href="{% url 'users:login' %}">Login</a>
+{% endif %}
 <h2>Flight ID: {{ pk }}</h2>
 <br>
 <li>Origin: {{ flight.origin }}</li>
@@ -13,12 +20,8 @@
 <li>Datetime: {{ flight.datetime|date:'Y/M/j H:i' }}</li>
 <li>Airline: {{ flight.airline }}</li>
 
-<br>
-<br>
-{#pk = {{ flight.pk }}#}
-<br>
-{#Passenger List:#}
-{#{% for passenger in passengers %}#}
+<br><br>
+
 <h1>Passengers:</h1>
 {% for p in passengers %}
     <li>{{ p }}</li>
@@ -41,5 +44,7 @@
 {% if message %}
     {{ message }}
 {% endif %}
+<br><br>
+<a href="{% url 'flights:homepage' %}">Back to Homepage</a>
 </body>
 </html>

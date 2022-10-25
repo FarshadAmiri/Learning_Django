@@ -12,7 +12,7 @@ class UserInfoAPI(GenericAPIView):
 
 
 class UserLogoutAPI(GenericAPIView):
-    permission_classes = (IsAuthenticated, IsAuthenticatedOrReadOnly)
+    permission_classes = (IsAuthenticated,)
 
     def post(self, request):
         request.user.auth_token.delete()

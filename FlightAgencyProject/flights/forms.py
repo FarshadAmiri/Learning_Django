@@ -24,7 +24,7 @@ class AddPassengerForm(ModelForm):
         fields = ['first_name', 'last_name', 'national_id']
 
     def save(self, commit=True):
-        data = super(AddPassengerForm,self).save(commit=commit)
+        data = super(AddPassengerForm, self).save(commit=commit)
         if Passenger.objects.filter(national_id = self.cleaned_data['national_id']).count() == 0:
             # p = Passenger.objects.create(first_name=self.data['first_name'], last_name=self.data['last_name'],
             #                          national_id=self.data['national_id'])

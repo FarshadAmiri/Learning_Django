@@ -4,16 +4,13 @@ from django.views.generic import CreateView, DetailView
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth import authenticate, login, logout
+from django.core.exceptions import PermissionDenied
 from .models import Flight
 from .forms import *
 
 
 def homepage(request):
     if request.method == 'GET':
-        # if not request.user.is_authenticated:
-        #     log_mode = False
-        # else:
-        #     log_mode = True
         form = SearchFlight()
         return render(request, "Homepage.html", context={'flights': Flight.objects.all(),'form': form
                                                          ,'user':request.user
@@ -33,15 +30,17 @@ def search_flight(request, origin, destination):
 
 
 # @login_required(login_url='users:login')
-@permission_required('flights.add_passenger', login_url='users:login',)
+# @permission_required('flights.add_passenger', login_url='users:login',)
 def flight_detail_view(request, pk):
     flight = Flight.objects.get(pk=pk)
     if request.method == 'GET':
         passengers = flight.passenger_set.all()
         form = AddPassengerForm()
         return render(request, 'Flight_detail_Page.html', context={
-            'flight':flight, 'passengers':passengers, 'form':form, 'pk':pk})
+            'flight':flight, 'passengers':passengers, 'form':form, 'pk':pk, 'user':request.user})
     elif request.method == 'POST':
+        if not request.user.has_perm('flights.add_passenger'):
+            raise PermissionDenied()
         form = AddPassengerForm(request.POST)
         if form.is_valid():
             p = form.save(commit=False)
@@ -78,11 +77,3 @@ def flight_detail_view(request, pk):
         return render(request, 'Flight_detail_Page.html', context={
             'flight': flight, 'passengers': passengers, 'form': form, 'pk': pk,
             'message': msg})
-
-
-
-
-class add_passenger(CreateView):
-    model = Passenger
-    fields = ['first_name', 'last_name', 'national_id']
-    template_name = 'Add_Passenger_Page.html'
