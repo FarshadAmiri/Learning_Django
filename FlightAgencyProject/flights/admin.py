@@ -3,7 +3,7 @@ from .models import *
 from django.contrib import admin, messages
 import datetime as dt
 
-admin.site.register(City)
+# admin.site.register(City)
 admin.site.register(Airport)
 admin.site.register(Airline)
 
@@ -59,5 +59,7 @@ class PassengerAdmin(admin.ModelAdmin):
     # filter_horizontal = ('tickets',)
 
 
-
-
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('pk', '__str__')
+    ordering = ['pk']
