@@ -1,17 +1,17 @@
 from django.shortcuts import get_object_or_404
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import GenericAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from .serializers import *
 from users.api.permissions import IsAdmin
 from flights.models import Flight
-
+from rest_framework.permissions import IsAdminUser
 
 # class SearchFlightAPI(GenericAPIView):
 #     permission_classes = (IsAuthenticated, IsAdmin)
 
 
-class ReadUpdateFlightAPI(GenericAPIView):
+class ReadUpdateFlightAPI_GenericAPIView(GenericAPIView):
     permission_classes = [IsAdmin,]
     serializer_class = FlightSerializer
     def get(self, request, flight_id):
@@ -32,7 +32,7 @@ class ReadUpdateFlightAPI(GenericAPIView):
         return Response({'message': flight_serialized.errors})
 
 
-class AddFlightAPI(GenericAPIView):
+class CreateFlightAPI_GenericAPIView(GenericAPIView):
     permission_classes = [IsAdmin,]
     serializer_class = FlightSerializer
 
@@ -42,3 +42,16 @@ class AddFlightAPI(GenericAPIView):
             flight_serialized.save()
             return Response(data={'message': 'Flight Added Successfully'})
         return Response(data={'message': flight_serialized.errors})
+
+
+class ReadUpdateDeleteFlightAPI(RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAdminUser,]
+    serializer_class = FlightSerializer
+    lookup_url_kwarg = 'flight_id'
+    queryset = Flight.objects.all()
+
+
+class CreateListFlightAPI(ListCreateAPIView):
+    permission_classes = [IsAdminUser,]
+    serializer_class = FlightSerializer
+    queryset = Flight.objects.all()
